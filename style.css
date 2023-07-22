@@ -1,0 +1,939 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.main-container{
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  width:100%;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.mobilenav{
+  display: none;
+  position: fixed;
+  width: 100%;
+  box-shadow: 5px 10px 20px grey;
+  background-color: #fff;
+}
+.mobile{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 20px;
+}
+.mobilenav .logo img{
+  width: auto;
+  height:45px
+}
+.mobilenav .humberg img{
+  width: auto;
+  height:45px
+}
+.mobilenav .search img{
+  width: 35px;
+  height:45px
+}
+nav.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;   
+  height: 15vh;
+  margin: 0px 60px;
+  align-items: center;
+}
+.navbar .logo img{
+  width: auto;
+  height:45px
+}
+.navbar .search{
+  border: 1px solid #233c7b;
+  width: 50%;
+  height:7vh;
+  display:flex;
+  flex-direction: row-reverse;
+  align-items:center;
+  border-radius: 5px;
+}
+.navbar .search input{
+  width: 90%;
+  background: transparent;
+  color: #242B2E;
+  outline: none;
+  border-style: none;
+}
+.navbar input::placeholder{
+  color: #233c7b;
+  font-size: medium;
+  font-weight: 500;
+}
+.navbar .button{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.navbar .search button {
+  background: transparent;
+  color: white;
+  border-style: none;
+  margin: 0 10px;
+}
+div.signin-btn  button{
+  background-color: #233c7b;
+  color: #f2f2f2;
+  padding: 10px 32px;
+  border-radius: 5px;
+  font-size: 18px;
+  border-style: none;
+  cursor: pointer;
+}
+div.signup-btn  button{
+  background-color: white;
+  color: #233c7b;
+  padding: 10px 32px;
+  border-radius: 10px;
+  font-size: 18px;
+  border-style: none;
+  cursor: pointer;
+}
+.navbar-items ul{
+  margin: 10px 0px;
+  display: flex;
+  justify-content:space-evenly;
+  text-decoration: none;
+  align-items: center;
+}
+.navbar-items .navitems li{
+  list-style-type:none;
+}
+.navbar-items .navitems li a{
+  text-decoration: none;
+  color: #233c7b;
+  font-size: medium;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* --------- section hero-main ----------- */
+
+.hero-main{
+  margin: 50px 0px;
+}
+.hero-content{
+  overflow: hidden;
+  width: 100%;
+}
+.hero-image{
+  display: flex;
+  flex-direction: row;
+}
+.slide img{
+  width:1300px;
+}
+
+/* ------ section hero-top  ------- */
+
+.hero-top h2{
+  padding-top: 50px;
+  text-align: center;
+  color: #233c7b;
+  font-size: 40px;
+  font-weight: 600;
+}
+.hero-top .underline{
+  border: 2px solid #ea8e30;
+  width: 150px;
+  margin:auto
+}
+.hero-cards{
+  margin: 100px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+.hero-card img{
+  width: 200px;
+}
+.hero-card h3{
+  margin: 20px 0px;
+  color: #44403d;
+  font-size: 28px;
+  font-weight: 600;
+}
+.hero-card h3.count{
+  font-size: 30px;
+  color: #233c7b;
+}
+
+/* ---- section Achievers ----- */
+
+.achievers{
+  background-color: #eef0f5;
+  padding: 50px;
+}
+.achievers h3{
+  padding: 50px;
+  font-size: 35px;
+  font-weight: 600;
+  color: #233c7b;
+  text-align: center;
+}
+.company{
+  padding: 50px;
+  width: 90%;
+  overflow: hidden;
+}
+.company-list{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.company-list img{
+  width: 200px;
+}
+
+/* ----- section Hall-Of-Fame ------ */
+
+.hallOfFame h1{
+  padding: 50px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #233c7b;
+  text-align: center;
+}
+.hallOfFame .cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hallOfFame .card{
+  width: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 10px 20px #d4d4d4;
+  padding: 50px 20px;
+  margin: 10px 0px;
+}
+.hallOfFame .image{
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+.hallOfFame .image img{
+  width: 100px;
+}
+.hallOfFame .about{
+  text-align: center;
+}
+.hallOfFame .about a{
+ text-decoration: none;
+ color: #1a294a;
+ padding: 20px 0;
+}
+.hallOfFame .about a h3{
+ font-weight: 600;
+ word-spacing: 1px;
+}
+.hallOfFame .about p{
+  color: grey;
+  padding: 20px 0;
+}
+.hallOfFame .card a img{
+  width: 30px;  
+}
+.hallOfFame h5{
+  margin: 30px 0;
+  text-align: center;
+  color: #1a294a;
+  font-size: larger;
+  word-spacing: 1px;
+}
+
+
+/* ---- Section live-Programme --- */
+
+.liveProgram{
+  margin-top: 50px;
+}
+.liveProgram h1{
+  padding: 25px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #233c7b;
+  text-align: center;
+}
+.liveProgram p{
+  font-weight: 400;
+  color: #233c7b;
+  font-size: larger;
+  text-align: center;
+}
+
+.liveProgram .cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.liveProgram .card{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 10px 20px #d4d4d4;
+  padding: 20px;
+  margin: 10px 0px;
+  color: #233c7b;
+}
+.liveProgram .image img{
+  width: 500px;
+}
+.liveProgram .about p{
+  text-align: left;
+  color: grey;
+  margin-top: 30px;
+  padding: 10px 0;
+}
+.liveProgram .about h2{
+  font-weight: 600;
+  padding: 10px 0;
+}
+.liveProgram .purchase{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+.liveProgram .purchase h3{
+  color: black;
+  font-weight: 600;
+  word-spacing: 1px;
+ }
+.liveProgram .purchase button{
+  background-color: rgb(146, 213, 245);
+  border: 1px solid  #509ef7;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #0655af;
+ }
+.liveProgram h5{
+  margin: 30px 0;
+  text-align: center;
+  color: #1a294a;
+  font-size: larger;
+  word-spacing: 1px;
+}
+
+
+/* ---- Section Affordable Programme --- */
+
+
+.AffordableProgramme{
+  margin-top: 50px;
+}
+.AffordableProgramme h1{
+  padding: 25px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #233c7b;
+  text-align: center;
+}
+.AffordableProgramme p{
+  font-weight: 400;
+  color: #233c7b;
+  font-size: larger;
+  text-align: center;
+}
+
+.AffordableProgramme .cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.AffordableProgramme .card{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 10px 20px #d4d4d4;
+  padding: 20px;
+  margin: 10px 0px;
+  color: #233c7b;
+}
+.AffordableProgramme .image img{
+  width: 500px;
+}
+.AffordableProgramme .about p{
+  text-align: left;
+  color: grey;
+  margin-top: 30px;
+  padding: 10px 0;
+}
+.AffordableProgramme .about h2{
+  font-weight: 600;
+  padding: 10px 0;
+}
+.AffordableProgramme .purchase h3{
+  color: black;
+  font-weight: 600;
+  word-spacing: 1px;
+ }
+.AffordableProgramme h5{
+  margin: 30px 0;
+  text-align: center;
+  color: #1a294a;
+  font-size: larger;
+  word-spacing: 1px;
+}
+
+/* ---- Section Community Programme --- */
+
+
+.CommunityProgramme{
+  margin-top: 50px;
+}
+.CommunityProgramme h1{
+  padding: 25px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #233c7b;
+  text-align: center;
+}
+.CommunityProgramme p{
+  font-weight: 400;
+  color: #233c7b;
+  font-size: larger;
+  text-align: center;
+}
+
+.CommunityProgramme .cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.CommunityProgramme .card{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 10px 20px #d4d4d4;
+  padding: 20px;
+  margin: 10px 0px;
+  color: #233c7b;
+}
+.CommunityProgramme .image img{
+  width: 500px;
+}
+.CommunityProgramme .about p{
+  text-align: left;
+  color: grey;
+  margin-top: 30px;
+  padding: 10px 0;
+}
+.CommunityProgramme .about h2{
+  font-weight: 600;
+  padding: 10px 0;
+}
+.CommunityProgramme .purchase h3{
+  color: black;
+  font-weight: 600;
+  word-spacing: 1px;
+ }
+.CommunityProgramme h5{
+  margin: 30px 0;
+  text-align: center;
+  color: #1a294a;
+  font-size: larger;
+  word-spacing: 1px;
+}
+/* ---- Section One Neuron --- */
+
+
+.oneNeuron{
+  margin-top: 50px;
+}
+.oneNeuron h1{
+  padding: 25px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #233c7b;
+  text-align: center;
+}
+.oneNeuron p{
+  font-weight: 400;
+  color: #233c7b;
+  font-size: larger;
+  text-align: center;
+}
+
+.oneNeuron .cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.oneNeuron .card{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 10px 20px #d4d4d4;
+  padding: 20px;
+  margin: 10px 0px;
+  color: #233c7b;
+}
+.oneNeuron .image img{
+  width: 500px;
+}
+.oneNeuron .about p{
+  text-align: left;
+  color: grey;
+  margin-top: 30px;
+  padding: 10px 0;
+}
+.oneNeuron .about h2{
+  font-weight: 600;
+  padding: 10px 0;
+}
+.oneNeuron .purchase h3{
+  color: black;
+  font-weight: 600;
+  word-spacing: 1px;
+ }
+.oneNeuron h5{
+  margin: 30px 0;
+  text-align: center;
+  color: #1a294a;
+  font-size: larger;
+  word-spacing: 1px;
+}
+/* ---- Section test series --- */
+
+.testSeries{
+  margin-top: 50px;
+}
+.testSeries h1{
+  padding: 25px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #233c7b;
+  text-align: center;
+}
+.testSeries p{
+  font-weight: 400;
+  color: #233c7b;
+  font-size: larger;
+  text-align: center;
+}
+.testSeries .cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.testSeries .card{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 10px 20px #d4d4d4;
+  padding: 20px;
+  margin: 10px 0px;
+  color: #233c7b;
+}
+.testSeries .image img{
+  width: 500px;
+}
+.testSeries .about h2{
+  font-weight: 600;
+  padding: 10px 0;
+}
+.testSeries .purchase h3{
+  color: black;
+  font-weight: 600;
+  word-spacing: 1px;
+  padding: 20px 0;
+ }
+.testSeries h5{
+  margin: 30px 0;
+  text-align: center;
+  color: #1a294a;
+  font-size: larger;
+  word-spacing: 1px;
+}
+
+/* -------  Hackathon ------  */
+
+.hackathon{
+  margin: 50px 0;
+}
+.hackathon h1{
+  padding: 25px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #233c7b;
+  text-align: center;
+}
+.hackathon .cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.hackathon .card{
+  width: 550px;
+  margin: 20px 0;
+  box-shadow: 5px 10px 20px rgb(199, 197, 197);
+}
+.hackathon .card img{
+  width: 550px;
+}
+
+/* -------- Hackathon company--------  */
+
+.hackathon-company{
+  margin: 50px 0;
+}
+.hackathon-company h1{
+  padding: 25px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #233c7b;
+  text-align: center;
+}
+.hackathon-company ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.hackathon-company ul li{
+  list-style-type: none;
+  padding: 30px 0;
+}
+
+/* ---------- section Products ------- */
+
+.products{
+  margin: 50px 0;
+}
+.products h1{
+  padding: 25px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #233c7b;
+  text-align: center;
+}
+.products .product-card{
+  margin: 100px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.products .cards{
+  width: 350px;
+  margin: 20px 0;
+}
+.products .product-name h5 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #233c7b;
+}
+.products .about-product p {
+  margin: 20px 0px;
+  color: #44403d;
+  font-size: 20px;
+}
+
+/* ---------- section Partner ------- */
+
+.partner{
+  margin: 50px 0;
+}
+.partner h1{
+  padding: 25px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #233c7b;
+  text-align: center;
+}
+.partner ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.partner li img{
+  width: 150px;
+}
+
+/* ------- footer ------- */
+
+footer{
+  background-color: #233c7b;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+.footer-logo .line1{
+  border: 1px solid #ea8e30;
+  width: 200px;
+}
+.left-footer .location{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 200px;
+  padding: 20px 0;
+}
+.left-footer .location a{
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  opacity: 0.8;
+}
+.left-footer .location a img{
+  width: 30px;
+}
+.left-footer .location a p{
+  word-spacing: 0.5px; 
+}
+.left-footer .email{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  padding: 20px 0;
+}
+.left-footer .mail-content{
+  padding: 0 5px;
+}
+.left-footer .email h6{
+  font-size: large;
+  opacity: 0.8;
+}
+.left-footer .email a{
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  opacity: 0.8;
+}
+.left-footer .email img{
+  width: 30px;
+}
+.left-footer .iso{
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+}
+.company-footer .mid-head h3{
+  font-size: xx-large;
+  font-weight: 600;
+  color: white;
+}
+.company-footer .line2{
+  border: 1px solid #ea8e30;
+  width: 200px;
+}
+.company-footer ul{
+  list-style-type: none;
+  color: white;
+}
+.company-footer li{
+  padding: 10px 0;
+}
+.company-footer li a{
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  opacity: 0.8;
+}
+.product-footer .mid-head h3{
+  font-size: xx-large;
+  font-weight: 600;
+  color: white;
+}
+.product-footer .line3{
+  border: 1px solid #ea8e30;
+  width: 200px;
+}
+.product-footer ul{
+  list-style-type: none;
+  color: white;
+}
+.product-footer li{
+  padding: 10px 0;
+}
+.product-footer li a{
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1085px){
+
+  .hero-main{
+    display: none;
+  }
+nav.navbar{
+  display: none;
+}
+.navbar-items{
+  display: none;
+}
+.mobilenav{
+  display:block;
+}
+.hero-top{
+  margin-top: 80px;
+}
+.hallOfFame .card{
+  width: 600px;
+}
+.liveProgram .card{
+  width: 650px;
+}
+.liveProgram .image img{
+  width: 650px;
+}
+.AffordableProgramme .card{
+  width: 650px;
+}
+.AffordableProgramme .image img{
+  width: 650px;
+}
+.CommunityProgramme .card{
+  width: 650px;
+}
+.CommunityProgramme .image img{
+  width: 650px;
+}
+ .oneNeuron .card{
+    width: 650px;
+  }
+  .oneNeuron .image img{
+    width: 650px;
+  }
+  .testSeries .card{
+    width: 650px;
+  }
+  .testSeries .image img{
+    width: 650px;
+  }
+  .hackathon .card{
+    width: 650px;
+  }
+  .hackathon .card img{
+    width: 650px;
+  }
+}
+
+@media screen and (max-width:680px) {
+  .hallOfFame .card{
+    width: 500px;
+  }
+  .liveProgram .card{
+    width: 550px;
+  }
+  .liveProgram .image img{
+    width: 550px;
+  }
+  .AffordableProgramme .card{
+    width: 550px;
+  }
+  .AffordableProgramme .image img{
+    width: 550px;
+  }
+  .CommunityProgramme .card{
+    width: 550px;
+  }
+  .CommunityProgramme .image img{
+    width: 550px;
+  }
+   .oneNeuron .card{
+    width: 550px;
+  }
+  .oneNeuron .image img{
+    width: 550px;
+  }
+  .testSeries .card{
+    width: 550px;
+  }
+  .testSeries .image img{
+    width: 550px;
+  }
+   .hackathon .card{
+    width: 550px;
+  }
+  .hackathon .card img{
+    width: 550px;
+  }
+
+}
+
+@media screen and (max-width:550px) {
+  .hallOfFame .card{
+    width: 350px;
+  }
+  .liveProgram .card{
+    width: 350px;
+  }
+  .liveProgram .image img{
+    width: 350px;
+  }
+  .AffordableProgramme .card{
+    width: 350px;
+  }
+  .AffordableProgramme .image img{
+    width: 350px;
+  }
+  .CommunityProgramme .card{
+    width: 350px;
+  }
+  .CommunityProgramme .image img{
+    width: 350px;
+  }
+  .oneNeuron .card{
+    width: 350px;
+  }
+  .oneNeuron .image img{
+    width: 350px;
+  }
+  .testSeries .card{
+    width: 350px;
+  }
+  .testSeries .image img{
+    width: 350px;
+  }
+  .hackathon .card{
+    width: 350px;
+  }
+  .hackathon .card img{
+    width: 350px;
+  }
+  .hackathon-company li img{
+    width: 200px;
+  }
+
+}
